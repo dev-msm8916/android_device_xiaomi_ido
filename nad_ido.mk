@@ -15,16 +15,20 @@
 
 $(call inherit-product, device/xiaomi/ido/full_ido.mk)
 
-# Inherit some common Mokee stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Nusantara stuff.
+$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
 
 # Must define platform variant before including any common things
 TARGET_BOARD_PLATFORM_VARIANT := msm8939
 
+# NusantaraROM
+TARGET_BOOT_ANIMATION_RES := 720
+USE_PIXEL_CHARGING := true
+
 # Assert
 TARGET_OTA_ASSERT_DEVICE := ido
 
-PRODUCT_NAME := lineage_ido
+PRODUCT_NAME := nad_ido
 BOARD_VENDOR := xiaomi
 PRODUCT_DEVICE := ido
 
