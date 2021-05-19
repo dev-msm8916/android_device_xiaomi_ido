@@ -230,5 +230,8 @@ PRODUCT_DEXPREOPT_SPEED_APPS += SystemUI
 PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := speed
 PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 
+# Inherit common Android Go defaults.
+$(call inherit-product, build/make/target/product/go_defaults.mk)
+
 # Inherit the rest from msm8916-common
 $(call inherit-product, device/cyanogen/msm8916-common/msm8916.mk)
