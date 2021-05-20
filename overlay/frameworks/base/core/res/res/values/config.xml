@@ -247,4 +247,7 @@
      -->
       <item name="config_lowResTaskSnapshotScale" format="float" type="dimen">0.3</item>
 
+     <!-- Flag to disable all transition animations -->
+     <bool name="config_disableTransitionAnimation">true</bool>
+
 </resources>
