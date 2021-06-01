@@ -17,13 +17,11 @@ $(call inherit-product, device/xiaomi/ido/full_ido.mk)
 
 # Inherit some common Nusantara stuff.
 $(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
+TARGET_BOOT_ANIMATION_RES := 720
+USE_PIXEL_CHARGING := true
 
 # Must define platform variant before including any common things
 TARGET_BOARD_PLATFORM_VARIANT := msm8939
-
-# NusantaraROM
-TARGET_BOOT_ANIMATION_RES := 720
-USE_PIXEL_CHARGING := true
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := ido
