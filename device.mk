@@ -188,7 +188,7 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 
 # Vendor security patch level
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.mk.build.vendor_security_patch=2017-01-01
+    ro.lineage.build.vendor_security_patch=2017-01-01
 
 # Dexopt
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -237,7 +237,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_DEXPREOPT_SPEED_APPS += SystemUI
 PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := speed
 PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
-
 
 # Inherit common Android Go defaults.
 $(call inherit-product, build/make/target/product/go_defaults_512.mk)
