@@ -14,9 +14,7 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/nad_ido.mk
+    $(LOCAL_DIR)/dot_ido.mk
 
 COMMON_LUNCH_CHOICES := \
-    nad_ido-eng \
-    nad_ido-userdebug \
-    nad_ido-user
+    dot_ido-userdebug
