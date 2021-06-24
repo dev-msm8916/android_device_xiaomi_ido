@@ -54,7 +54,7 @@ PRODUCT_PACKAGES += \
     Snap
 
 PRODUCT_PACKAGES += \
-    android.hardware.camera.provider@2.5-service \
+    android.hardware.camera.provider@2.5-service
 
 
 # Consumerir
