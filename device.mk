@@ -254,19 +254,6 @@ PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 PRODUCT_PACKAGES += \
     XiaomiDoze
 
-# Wifi
-PRODUCT_PACKAGES += \
-    android.hardware.wifi@1.0-service \
-    hostapd \
-    libwifi-hal-ctrl \
-    libwifi-hal-qcom \
-    libwpa_client \
-    TetheringConfigOverlay \
-    wpa_cli \
-    wpa_supplicant \
-    wpa_supplicant.conf \
-    WifiOverlay
-
 # Inherit common Android Go defaults.
 $(call inherit-product, build/make/target/product/go_defaults_512.mk)
 
