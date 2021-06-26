@@ -18,9 +18,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_l.mk)
 
 $(call inherit-product, device/xiaomi/ido/full_ido.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Xtended stuff.
+$(call inherit-product, vendor/xtended/config/common_mini_go_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 720
+XTENDED_BUILD_MAINTAINER := xvae27
+XTENDED_BUILD_DONATE_URL := https://saweria.co/xvae27
 
 # Must define platform variant before including any common things
 TARGET_BOARD_PLATFORM_VARIANT := msm8939
@@ -28,7 +30,7 @@ TARGET_BOARD_PLATFORM_VARIANT := msm8939
 # Assert
 TARGET_OTA_ASSERT_DEVICE := ido
 
-PRODUCT_NAME := lineage_ido
+PRODUCT_NAME := xtended_ido
 BOARD_VENDOR := xiaomi
 PRODUCT_DEVICE := ido
 

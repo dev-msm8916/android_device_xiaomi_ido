@@ -14,7 +14,7 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_ido.mk
+    $(LOCAL_DIR)/xtended_ido.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_ido-userdebug
+    xtended_ido-userdebug
