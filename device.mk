@@ -130,9 +130,6 @@ PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/bluetooth_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
 
-# Audio package for Go
-$(call inherit-product, frameworks/base/data/sounds/AudioPackageGo.mk)
-
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:system/vendor/etc/permissions/android.hardware.audio.low_latency.xml \
@@ -253,9 +250,6 @@ PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 # Xiaomi Doze
 PRODUCT_PACKAGES += \
     XiaomiDoze
-
-# Inherit common Android Go defaults.
-$(call inherit-product, build/make/target/product/go_defaults_512.mk)
 
 # Inherit the rest from msm8916-common
 $(call inherit-product, device/cyanogen/msm8916-common/msm8916.mk)
