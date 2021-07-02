@@ -259,4 +259,7 @@
 
     <!-- True if the device should block turning display on at boot until wallpaper is ready -->
     <bool name="config_checkWallpaperAtBoot">false</bool>
+
+    <!-- Number of notifications to keep in the notification service historical archive -->
+    <integer name="config_notificationServiceArchiveSize">300</integer>
 </resources>
