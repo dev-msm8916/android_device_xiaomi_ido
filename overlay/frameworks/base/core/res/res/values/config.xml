@@ -244,4 +244,13 @@
     <!-- The maximum number of visible recent tasks to be presented to the user through the
          SystemUI. Can be -1 if there is no maximum limit. -->
     <integer name="config_maxNumVisibleRecentTasks_lowRam">5</integer>
+
+    <!-- Whether UI for multi user should be shown -->
+    <bool name="config_enableMultiUserUI">false</bool>
+
+    <!--  Maximum number of supported users -->
+    <integer name="config_multiuserMaximumUsers">1</integer>
+
+    <!-- Maximum number of users we allow to be running at a time -->
+    <integer name="config_multiuserMaxRunningUsers">1</integer>
 </resources>
