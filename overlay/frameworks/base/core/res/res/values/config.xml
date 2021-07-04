@@ -236,4 +236,12 @@
 
      <!-- Enable Zram writeback feature to allow unused pages in zram be written to flash. -->
      <bool name="config_zramWriteback">true</bool>
+
+    <!-- The minimum number of visible recent tasks to be presented to the user through the
+         SystemUI. Can be -1 if there is no minimum limit. -->
+    <integer name="config_minNumVisibleRecentTasks_lowRam">-1</integer>
+
+    <!-- The maximum number of visible recent tasks to be presented to the user through the
+         SystemUI. Can be -1 if there is no maximum limit. -->
+    <integer name="config_maxNumVisibleRecentTasks_lowRam">5</integer>
 </resources>
