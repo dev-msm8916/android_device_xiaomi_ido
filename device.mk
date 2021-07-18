@@ -45,6 +45,7 @@ PRODUCT_COPY_FILES += \
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
+TARGET_BOOT_ANIMATION_RES := 720
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -250,18 +251,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_DEXPREOPT_SPEED_APPS += SystemUI
 PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := speed
 PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
-
-# Always preopt extracted APKs to prevent extracting out of the APK for gms
-# modules.
-PRODUCT_ALWAYS_PREOPT_EXTRACTED_APK := true
-
-# Use a profile based boot image for this device. Note that this is currently a
-# generic profile and not Android Go optimized.
-PRODUCT_USE_PROFILE_FOR_BOOT_IMAGE := true
-PRODUCT_DEX_PREOPT_BOOT_IMAGE_PROFILE_LOCATION := frameworks/base/config/boot-image-profile.txt
-
-# Do not generate libartd.
-PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 
 # WiFi
 PRODUCT_PACKAGES += \

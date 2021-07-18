@@ -20,8 +20,6 @@ $(call inherit-product, device/xiaomi/ido/full_ido.mk)
 
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
-TARGET_BOOT_ANIMATION_RES := 720
-SAKURA_MAINTAINER := xvae27
 
 # Must define platform variant before including any common things
 TARGET_BOARD_PLATFORM_VARIANT := msm8939
