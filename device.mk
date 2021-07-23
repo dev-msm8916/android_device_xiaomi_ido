@@ -252,10 +252,5 @@ PRODUCT_DEXPREOPT_SPEED_APPS += SystemUI
 PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := speed
 PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 
-# WiFi
-PRODUCT_PACKAGES += \
-    TetheringConfigOverlay \
-    WifiOverlay
-
 # Inherit the rest from msm8916-common
 $(call inherit-product, device/cyanogen/msm8916-common/msm8916.mk)
